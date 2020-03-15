@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<div class="container">
+<form method="post" action="/produits/search">
+    <div>
+        <input type="text" placeholder="Search" name="q">
+    </div>
+    <button type="submit">Search</button>
+</form>
+</div>
+<div class="container">
+<table>
+    <thead>
+    <th> Libelle </th>
+    <th> Quantite </th>
+    <th> Description </th>
+    <th> Date Validite </th>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>{{item.libelle}} </td>
+            <td>{{item.quantite}} </td>
+            <td>{{item.description}} </td>
+            <td>{{item.date}} </td>
+            <td><a href="/produits/one/{{item._id}}">View </a></td>
+            <td><a href="/produits/delete/{{item._id}}">Delete </a></td>
+            <td><a href="/produits/update/{{item._id}}">Update </a></td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+</html>

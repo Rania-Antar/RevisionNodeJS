@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<div class="container">
+    <div id="erreur">
+        <p>Vous n'avez pas rempli correctement les champs du formulaire !</p>
+    </div>
+    <form action="/produits/addProduit" method="post" class="form-group">
+        <label>Libelle : </label>
+        <input type="text" name="libelle" id="libelle" class="form-control"/>
+        <label>Quantite : </label>
+        <input type="number" name="quantite" id="quantite" class="form-control"/>
+        <label>Decription : </label>
+        <input type="text" name="description" id="description" class="form-control"/>
+        <label>Date Validite : </label>
+        <input type="text" name="date" id="date" class="form-control"/>
+        <input type ="submit" id="envoi" value="OK"  class="btn btn-info"/>
+        <input type="reset" id="rafraichir" value="Rafraîchir" class="btn btn-danger"/>
+    </form>
+</div>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="/javascripts/validate.js"> </script>

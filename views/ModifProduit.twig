@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<div class="container">
+    <div id="erreur">
+        <p>Vous n'avez pas rempli correctement les champs du formulaire !</p>
+    </div>
+<form action="/produits/update" method="post">
+    <input type="text" name="libelle" id="libelle" value="{{produit.libelle}}"/>
+    <input type="number" name="quantite" id="quantite" value="{{produit.quantite}}"/>
+    <input type="text" name="description"   id="description" value="{{produit.description}}"/>
+    <input type="text" name="date" id="date" value="{{produit.date}}"/>
+    <input type="text" name="id" id="id" value="{{produit._id}}" readonly="readonly" />
+    <input type ="submit" value="OK"  id="envoi" class="btn btn-info" />
+</form>
+</div>
+</html>
+
+<script src="/javascripts/jquery-3.4.1.js"> </script>
+<script src="/javascripts/validate.js"> </script>
+
+

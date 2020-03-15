@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<table border="1">
+    <thead>
+    <th> Libelle </th>
+    <th> Quantite </th>
+    <th> Description </th>
+    <th> Date Validite </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{item.libelle}} </td>
+            <td>{{item.quantite}} </td>
+            <td>{{item.description}} </td>
+            <td>{{item.date}} </td>
+            <td><a href="/produits/delete/{{item._id}}">Delete </a></td>
+            <td><a href="/produits/update/{{item._id}}">update </a></td>
+        </tr>
+    </tbody>
+</table>
+</html>
